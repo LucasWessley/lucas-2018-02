@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Criar Editoras', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Criar Editora', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -23,6 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id_editora',
             'nome',
+            'local',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

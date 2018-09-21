@@ -18,7 +18,7 @@ class Editoras extends \yii\db\ActiveRecord
     public static function tableName()
     {
         return 'editoras';
-    }
+    }   
 
     /**
      * {@inheritdoc}
@@ -26,8 +26,10 @@ class Editoras extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['nome'], 'required'],
-            [['nome'], 'string', 'max' => 20],
+            [['nome', 'local'], 'required'],
+            [['nome', 'local'], 'string', 'max' => 20],
+
+
         ];
     }
 
@@ -39,6 +41,7 @@ class Editoras extends \yii\db\ActiveRecord
         return [
             'id_editora' => 'Id Editora',
             'nome' => 'Nome',
+            'local' => 'local',
         ];
     }
 }
