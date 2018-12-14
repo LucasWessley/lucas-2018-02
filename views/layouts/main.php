@@ -8,6 +8,7 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 AppAsset::register($this);
+$this->title = 'BIBLIOTECA';
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
